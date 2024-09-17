@@ -1,13 +1,12 @@
-import Header from "./components/Header";
 import Search from "./components/Search";
+import Layout from "./layouts/Layout";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Search />
+    <Layout>
+      <Search/>
       <h1>Book App</h1>
-    </>
+    </Layout>
   );
 }
 
