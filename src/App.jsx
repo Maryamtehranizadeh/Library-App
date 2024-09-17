@@ -1,9 +1,14 @@
 import React from "react";
+import Header from "./components/Header";
+import Search from "./components/Search";
+import BookList from "./components/BookList";
 
 function App() {
   return (
     <div>
-      <h1>Library App</h1>
+      <Header />
+      <Search />
+      <BookList/>
     </div>
   );
 }
