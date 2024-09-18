@@ -1,11 +1,12 @@
-import Search from "./components/Search";
 import Layout from "./layouts/Layout";
+import Books from "./components/Books";
+import SearchBox from "./components/SearchBox";
 
 function App() {
   return (
     <Layout>
-      <Search/>
-      <h1>Book App</h1>
+      <SearchBox />
+      <Books />
     </Layout>
   );
 }
