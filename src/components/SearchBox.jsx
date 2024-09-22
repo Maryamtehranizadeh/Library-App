@@ -1,10 +1,15 @@
 import { SlMagnifier } from "react-icons/sl";
 
-function SearchBox({ data, search, setSearch }) {
+function SearchBox({ search, setSearch, searchHandler }) {
   return (
     <div>
-      <input onChange={setSearch(e=> e.target.value)} type="text" placeholder="Search" value={search} />
-      <button>
+      <input
+        onChange={(e) => setSearch(e.target.value.toLocaleLowerCase())}
+        type="text"
+        placeholder="Search"
+        value={search}
+      />
+      <button onClick={searchHandler}>
         <SlMagnifier />
       </button>
     </div>
